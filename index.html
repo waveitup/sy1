@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f6f5f5;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 200px;
+        }
+        h1 {
+            font-size: 28px;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: black;
+        }
+        select, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        select {
+            background-color: #fafafa;
+            color: black;
+        }
+        button {
+            background-color: #162db0;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 550;
+        }
+        button:hover {
+            background-color: #162db0;
+        }
+        button:active {
+            background-color: #415eff;
+            transition-delay: 20s;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome</h1>
+        <div class="form-group">
+            <select id="languageSelect">
+                <option value="">--Select--</option>
+                <option value="c.html">C</option>
+                <option value="iwd.html">IWD</option>
+                <option value="dts.html">DTS</option>
+                <option value="pcs.html">PCS</option>
+            </select>
+        </div>
+        <button type="button" onclick="redirectToPage()">Continue</button>
+    </div>
+
+    <script>
+        function redirectToPage() {
+            var select = document.getElementById('languageSelect');
+            var selectedValue = select.value;
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+            else {
+                alert("Please select a language.");
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Language</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+
+<body>
+
+    <nav>
+        <center>
+            <h2>C Language (UNIT - II)</h2>
+        </center>
+    </nav>
+
+    <div class="container">
+
+        <section>
+
+            <details>
+                <summary>History of C Language</summary>
+                <p><b>-</b> FORTRAN : Formula Translator. <br>
+                    <b>-</b> COBOL - Common Business Oriented Language. <br>
+                    <b>-</b> C Language was developed by Dennis Ritchie in early 1970s at AT&T Bell Laboratories. <br>
+                    <b>-</b> Initially it was designed for programming in operating system called UNIX. After the advent of C,
+                    the whole UNIX operating system was rewritten using it. <br>
+                    <b>-</b> C Language was derived from B Language which itself was derived from BCPL (Basic Combined
+                    Programming Language). <br>
+                    <b>-</b> BCPL was developed by Martin Richards at Cambridge University. <br>
+                    <b>-</b> In 1982, a committee was formed by ANSI (American National Standards Institute) to standardize C.
+                    <br>
+                    <b>-</b> Finally in 1989, standard for C was introduced (ANSI C).
+                </p>
+            </details>
+
+            <details>
+                <summary>Importance of C</summary>
+                <p>
+                    <b>i)</b> C is commonly used programming language for system softwares and system level applications. <br>
+                    <b>ii)</b> Code written in C can be compiled and run on any type of computer with minimal changes. <br>
+                    <b>iii)</b> It's efficiency makes it suitable for programming micro controllers and other hardwares with limited resourses. <br>
+                    <b>iv)</b> C's ability to interact directly with hardware and perform bit-level operations makes it suitable for writing device drivers and firmwares. 
+                </p>
+            </details>
+
+            <details>
+                <summary>Elements of C</summary>
+                <p>
+                    <b>1)</b> Character Set <br>
+                    <b>2)</b> Keywords <br>
+                    <b>3)</b> Identifiers <br>
+                    <b>4)</b> Data Types <br>
+                    <b>5)</b> Variables <br>
+                    <b>6)</b> Constants
+                </p>
+            </details>
+
+            <details>
+                <summary>Character Set</summary>
+                <p>
+                    <b>Character Set</b> is a set of characters that are used in C programs. It is a set of all the valid characters that we can use in the source program for forming words, expressions and numbers. C Language supports a total of 256 characters. Character set in C include alphabats, numbers, symbols etc.<br> <br>
+                    <b>Character Set include :</b> <br>
+                    <b>i) Alphanumeric Characters :</b> Letters and Digits. <br>
+                    <b>ii) Special Characters :</b> Punctuations and Whitespaces. <br>
+                    <b>iii) Escape Sequences :</b> \t, \n, etc. <br>
+                    <b>iv) Comments :</b> Single line and Multi line. <br>
+                    <b>v) Preprocessor Directives :</b> #include, #define.
+                </p>
+            </details>
+
+            <details>
+                <summary>Keywords</summary>
+                <p>
+                    <b>Keywords</b> are the reserved words in C for doing some specific task. They are the words with predefined meanings and can't be used as identifiers or variable names, as they have a specific function within the language. They are always written in lowercase. There are only 32 keywords in C language. <br> <br>
+                    <b>For Example :</b> int, for, do, void etc.
+                </p>
+            </details>
+
+            <details>
+                <summary>Identifiers</summary>
+                <p>
+                    <b>Identifiers</b> are the names assigned to the different entities such as variables and functions etc. Identifiers cannot be keywords. They are user defined words. They serve as symbolic references to memory locations or functions, facilitating code readability and maintainability. <br> <br>
+                    <b>Rules to name identifiers :</b><br>
+                    <b>i)</b> Name should consists of only letters, digits and underscore. <br>
+                    <b>ii)</b> First character should be an alphabat or underscore. <br>
+                    <b>iii)</b> Name should not be a keyword. <br>
+                    <b>iv)</b> C is a case sensitive. Uppercase and lowercase will be considered different. <br>
+                    <b>v)</b> An identifier's name may be arbitrarily long.
+                </p>
+            </details>
+
+            <details>
+                <summary>Data Types</summary>
+                <p>
+                    <b>Data Type</b> is a classification that specifies which type of value a variable can hold and what kind of operations can be performed on that value. Data types play a crucial role in defining how data is stored, manipulated, and interpreted by the program. <br> <br>
+                    <b>Data Types in C :</b><br>
+                    <b>i) char :</b> Single character (1 byte) <br>
+                    <b>ii) int :</b> Interger numbers (2 bytes) <br>
+                    <b>iii) float :</b> Decimal numbers (4 bytes) <br>
+                    <b>iv) double :</b> Larger decimal numbers (8 bytes) <br>
+                    <b>v) void :</b> No value or return type.
+                </p>
+            </details>
+
+            <details>
+                <summary>Variables</summary>
+                <p>
+                    <b>Variable</b> is a temporary container in which data can be stored within the computer memory. Basically, a variable in C is a symbolic name associated with a memory location that stores a value of a specific data type. This memory location allows the program to store, retrieve, and manipulate data during runtime. Variables are essential for performing operations, making decisions, and managing data flow within a program. They have a user defined name. <br> <br>
+                    <b>Declaration of a variable :</b> int a;
+                </p>
+            </details>
+
+            <details>
+                <summary>Constants</summary>
+                <p>
+                    <b>Constants</b> are the fixed values that do not change during the execution of the program. Once defined, their value remains the same. This prevents accidental changes and helps maintain the integrity of the data. For example, using a constant for mathematical values like π (pi). <br> <br>
+                    <b>Example :</b> const int num = 10;
+                </p>
+            </details>
+
+            <details>
+                <summary>Symbolic Constant</summary>
+                <p>
+                    <b>Symbolic Constant</b> in C language is a named constant whose value is fixed and does not change during the execution of a program. Symbolic constants are used to improve code readability and maintainability by giving meaningful names to constant values.. <br> <br>
+                    <b>Example :</b><br> #define PI 3.14159 (using preprocessor directive) <br>
+                    const float PI = 3.14159; (using const) 
+                </p>
+            </details>
+
+            <details>
+                <summary>Assignment Statement</summary>
+                <p>
+                    <b>Assignment Statement</b> in C language is a fundamental operation used to set or update the value of a variable using assignment operator (=). It is essential for manipulating data and controlling the flow of a program. <br> <br>
+                    <b>Example :</b> int num = 10; 
+                </p>
+            </details>
+
+            <details>
+                <summary>scanf()</summary>
+                <p>
+                    <b>scanf</b> is a commonly used input function in C Language. It allows you to read input from the user and store that input in a variable. <br> <br>
+                    <b>Example :</b> scanf("%d", &a); 
+                </p>
+            </details>
+
+            <details>
+                <summary>printf()</summary>
+                <p>
+                    <b>printf</b> is a predefined function from the header stdio.h, it is used to print formatted output to the console. <br> <br>
+                    <b>Example :</b> printf("Hello"); 
+                </p>
+            </details>
+
+            <details>
+                <summary>Operators</summary>
+                <p>
+                    <b>Operators</b> are the symbols that perform operations on operands. <br> <br>
+
+                    <b>Types of Operator :</b><br><br>
+
+                    <b>1) Arithmetic Operators :</b> Used for methematical operations.<br>
+                    <b>Ex :</b> +, -, /, *, % etc. <br><br>
+
+                    <b>2) Relational Operators :</b> Used to compare two values.<br>
+                    <b>Ex :</b> <, >, ==, <=, >=, != etc. <br><br>
+
+                    <b>3) Logical Operators :</b> Used to perform logical operations.<br>
+                    <b>Ex :</b> Logical AND (a&&b) <br> Logical OR (a||b) <br> Logical NOT (!a) <br><br>
+
+                    <b>4) Assignment Operators :</b> Used to assign values to variables.<br>
+                    <b>Ex :</b> Simple assignment (a=b) <br> Addition assignment (a+=b is equivalent to a = a+b) <br> Subtraction assignment (a-=b is equivalent to a = a-b) <br><br>
+
+                    <b>5) Increment and Decrement Operators :</b> Used to increase or decrease the value of a variable by 1.<br>
+                    <b>Ex :</b> Increment (a++ or ++a) <br> Decrement (a-- or --a) <br><br>
+
+                    <b>6) Bitwise Operators :</b> Operate on binary representations of integers. <br>
+                    <b>Ex :</b> Bitwise AND (a&b) <br> Bitwise OR (a|b) <br> Bitwise XOR (a^b) <br>Bitwise NOT (~a) <br> Left shift (a<<1) <br> Right shift (a>>1) <br><br>
+
+                    <b>7) Conditional (Ternary) Operators :</b> A shorthand for the if-else statement.<br>
+                    <b>Ex :</b> (condition ? exp1 : exp2) <br><br>
+
+                    <b>8) Comma Operator :</b> Used to seperate expressions in places where multiple expressions are allowed.<br>
+                    <b>Ex :</b> int a = 5, b = 6, c += 1; <br><br>
+
+                    <b>9) Pointer Operator :</b> Used for pointer manipulation.<br>
+                    <b>Ex :</b> Dereference (*ptr) <br> Address of (&var)
+                </p>
+            </details>
+
+        </section>
+
+    </div>
+
+    <center style="margin-bottom: 80px;"><h2>More Coming Soon 😼</h2></center>
+
+</body>
+
+</html>
